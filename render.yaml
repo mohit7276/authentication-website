@@ -1,19 +1,18 @@
-version: 1
 services:
   - type: web
-    name: auth-backend
+    name: authentication-website-backend
     env: node
     plan: free
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
       - key: MONGODB_URI
-        value: mongodb+srv://your-username:your-password@cluster.mongodb.net/authapp
+        value: mongodb+srv://mohit7276:%40Mohit1212@cluster0.ex9i2tk.mongodb.net/authapp?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
         generateValue: true
       - key: NODE_ENV
         value: production
       - key: GOOGLE_CLIENT_ID
-        value: your-google-client-id
+        value: 848381710448-ccfoalo5n2id2vn8kmr8i07aj175b8q5.apps.googleusercontent.com
       - key: GOOGLE_CLIENT_SECRET
-        value: your-google-client-secret
+        value: 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
