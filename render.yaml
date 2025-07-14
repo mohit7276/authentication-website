@@ -1,0 +1,19 @@
+version: 1
+services:
+  - type: web
+    name: auth-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://your-username:your-password@cluster.mongodb.net/authapp
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_CLIENT_ID
+        value: your-google-client-id
+      - key: GOOGLE_CLIENT_SECRET
+        value: your-google-client-secret

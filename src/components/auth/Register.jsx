@@ -96,7 +96,8 @@ const Register = () => {
     try {
       console.log(`Attempting ${provider} OAuth...`);
       // Redirect to backend OAuth endpoint
-      window.location.href = `http://localhost:5000/api/auth/${provider}`;
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      window.location.href = `${apiUrl}/auth/${provider}`;
     } catch (error) {
       console.error('Social auth error:', error);
       alert(`Error: ${error.message}`);

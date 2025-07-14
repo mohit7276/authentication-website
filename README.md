@@ -2,7 +2,12 @@
 
 A modern, secure authentication system built with React, Node.js, and MongoDB, featuring Google OAuth integration and responsive design.
 
-## 🚀 Features
+## 🌐 Live Demo
+- **🔗 Website:** https://authentication-website-mohit7276.vercel.app
+- **⚡ API:** https://authentication-website-backend.onrender.com
+- **� Mobile Optimized:** Works perfectly on all devices
+
+## �🚀 Features
 
 - **User Registration & Login** with email/password
 - **Google OAuth Integration** for social authentication  
@@ -11,6 +16,7 @@ A modern, secure authentication system built with React, Node.js, and MongoDB, f
 - **Professional UI** with smooth animations using Framer Motion
 - **Secure Backend** with bcrypt password hashing
 - **MongoDB Support** for data storage
+- **24/7 Availability** - Deployed on cloud platforms
 
 ## 🔧 Quick Start
 

@@ -85,7 +85,8 @@ const Login = () => {
       const isDev = window.location.hostname === 'localhost';
       if (isDev) {
         console.log(`Attempting ${provider} OAuth...`);
-        window.location.href = `http://localhost:5000/api/auth/${provider}`;
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      window.location.href = `${apiUrl}/auth/${provider}`;
       } else {
         // Production would use your actual domain
         window.location.href = `/api/auth/${provider}`;

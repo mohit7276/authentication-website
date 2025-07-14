@@ -14,7 +14,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://authentication-website-mohit7276.vercel.app',
+    'https://*.vercel.app',
+    process.env.FRONTEND_URL
+  ].filter(Boolean),
   credentials: true
 }));
 app.use(express.json());
@@ -22,11 +27,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Session configuration
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'your-secret-key-here',
+  secret: process.env.SESSION_SECRET || process.env.JWT_SECRET || 'your-secret-key-here',
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: false, // Set to true in production with HTTPS
+    secure: process.env.NODE_ENV === 'production', // HTTPS in production
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
   }
 }));
