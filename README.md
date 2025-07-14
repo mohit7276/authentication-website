@@ -12,17 +12,38 @@ A modern, secure authentication system built with React, Node.js, and MongoDB, f
 - **Secure Backend** with bcrypt password hashing
 - **MongoDB Support** for data storage
 
-## How to Run
+## 🔧 Quick Start
 
-1. Install dependencies:
-   ```
-   npm install
-   ```
-2. Start the development server:
-   ```
-   npm run dev
-   ```
-3. Open the provided local URL in your browser to play the game.
+### Option 1: Automated Setup (Recommended)
+```bash
+# Windows
+setup.bat
+
+# Linux/Mac  
+chmod +x setup.sh && ./setup.sh
+```
+
+### Option 2: Manual Setup
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd authentication-website
+
+# 2. Install dependencies
+npm run setup
+
+# 3. Configure environment
+# Edit server/.env with your credentials
+
+# 4. Start the application
+npm run start
+```
+
+## 🌐 Access Your Website
+
+- **Local:** http://localhost:3000
+- **Mobile/Network:** Check terminal for network URLs
+- **Features:** Register, Login, Dashboard, Google OAuth
 
 ## Features
 - Simple, funny game mechanic

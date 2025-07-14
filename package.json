@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "cd server && npm run dev",
-    "start": "concurrently \"npm run server\" \"npm run dev\""
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "setup": "npm install && cd server && npm install && cd ..",
+    "clean": "rm -rf node_modules server/node_modules",
+    "postinstall": "cd server && npm install"
   },
   "devDependencies": {
     "concurrently": "^9.2.0",
