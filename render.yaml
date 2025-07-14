@@ -3,13 +3,16 @@ services:
     name: authentication-website-backend
     env: node
     plan: free
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm start
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: server
     envVars:
       - key: MONGODB_URI
         value: mongodb+srv://mohit7276:%40Mohit1212@cluster0.ex9i2tk.mongodb.net/authapp?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
-        generateValue: true
+        value: SuperSecureJWT2024Key!AuthWebsite
+      - key: SESSION_SECRET
+        value: SecureSession2024AuthApp!
       - key: NODE_ENV
         value: production
       - key: GOOGLE_CLIENT_ID

@@ -16,9 +16,13 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
+    'http://localhost:3001', 
+    'http://localhost:3002',
     'https://authentication-website-mohit7276.vercel.app',
+    'https://authentication-website.vercel.app',
     'https://*.vercel.app',
-    process.env.FRONTEND_URL
+    process.env.FRONTEND_URL,
+    process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:3002'
   ].filter(Boolean),
   credentials: true
 }));
