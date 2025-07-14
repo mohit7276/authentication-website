@@ -281,55 +281,7 @@ const Login = () => {
           </motion.div>
         </div>
 
-        <motion.div 
-          className="auth-footer"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1 }}
-          style={{ 
-            position: 'relative',
-            zIndex: 1000,
-            pointerEvents: 'auto'
-          }}
-        >
-          <p style={{ marginBottom: '15px' }}>
-            Don't have an account?{' '}
-            <Link 
-              to="/register" 
-              className="auth-link"
-              style={{ 
-                color: '#667eea',
-                textDecoration: 'underline',
-                fontWeight: 'bold'
-              }}
-            >
-              Create one here
-            </Link>
-          </p>
-          
-          {/* Single navigation button */}
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button 
-              type="button"
-              onClick={() => {
-                console.log('Go to Register button clicked');
-                window.location.href = '/register';
-              }}
-              style={{
-                background: '#667eea',
-                color: 'white',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                fontSize: '14px',
-                fontWeight: '500'
-              }}
-            >
-              Go to Register
-            </button>
-          </div>
-        </motion.div>
+
       </motion.div>
 
       {/* Background Animation */}
