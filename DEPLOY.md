@@ -44,7 +44,7 @@ npx vercel --prod
 ## 🌐 After Deployment
 
 Your website will be available at:
-- **Frontend:** `https://authentication-website-mohit7276.vercel.app`
+- **Frontend:** `https://authentication-website-wheat.vercel.app`
 - **Backend:** `https://authentication-website-backend.onrender.com`
 - **Status:** 24/7 online, accessible worldwide
 

@@ -1,12 +1,12 @@
 # Pr## 🌐 Live Demo
-- **🔗 Website:** [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mohit7276/authentication-website&env=VITE_API_URL&envDescription=Backend%20API%20URL)
+- **🔗 Website:** https://authentication-website-wheat.vercel.app
 - **⚡ Backend:** [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mohit7276/authentication-website)
 - **📱 Mobile Optimized:** Works perfectly on all devicessional Authentication Website
 
 A modern, secure authentication system built with React, Node.js, and MongoDB, featuring Google OAuth integration and responsive design.
 
 ## 🌐 Live Demo
-- **🔗 Website:** https://authentication-website-mohit7276.vercel.app
+- **🔗 Website:** https://authentication-website-wheat.vercel.app
 - **⚡ API:** https://authentication-website-backend.onrender.com
 - **� Mobile Optimized:** Works perfectly on all devices
 

@@ -91,5 +91,5 @@ git push origin main
 ---
 
 **🎉 Your website will be live at:**
-- **Frontend:** `https://authentication-website-mohit7276.vercel.app`
+- **Frontend:** `https://authentication-website-wheat.vercel.app`
 - **Backend:** `https://authentication-website-backend.onrender.com`

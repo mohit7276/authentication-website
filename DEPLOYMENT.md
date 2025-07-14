@@ -3,7 +3,7 @@
 This guide will help you deploy your authentication website so it's accessible 24/7, even when your PC is off.
 
 ## 🌐 Live Demo
-- **Frontend:** https://authentication-website-mohit7276.vercel.app
+- **Frontend:** https://authentication-website-wheat.vercel.app
 - **Backend:** https://authentication-website-backend.onrender.com
 
 ## 📋 Deployment Steps
@@ -85,7 +85,7 @@ git push origin main
 ## 🌍 Your Live URLs
 
 After deployment, update these in your README:
-- **Website:** https://authentication-website-mohit7276.vercel.app
+- **Website:** https://authentication-website-wheat.vercel.app
 - **API:** https://authentication-website-backend.onrender.com
 
 ## 🛠️ Troubleshooting

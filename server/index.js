@@ -18,7 +18,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:3001', 
     'http://localhost:3002',
-    'https://authentication-website-mohit7276.vercel.app',
+    'https://authentication-website-wheat.vercel.app',
     'https://authentication-website.vercel.app',
     'https://*.vercel.app',
     process.env.FRONTEND_URL,
